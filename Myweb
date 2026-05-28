@@ -1,0 +1,60 @@
+export default function MediaVault() { return ( <div className="min-h-screen bg-gray-100 p-6"> <div className="max-w-5xl mx-auto"> <div className="bg-white rounded-3xl shadow-xl p-8"> <h1 className="text-4xl font-bold text-center mb-4"> My Media Vault </h1>
+
+<p className="text-center text-gray-600 mb-8 text-lg">
+        Upload and store your photos and videos for free.
+      </p>
+
+      <div className="border-2 border-dashed border-gray-300 rounded-2xl p-10 text-center bg-gray-50">
+        <input
+          type="file"
+          multiple
+          accept="image/*,video/*"
+          className="mb-4"
+        />
+
+        <p className="text-gray-500">
+          Choose photos or videos from your device.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="bg-gray-100 rounded-2xl p-6 text-center shadow-sm">
+          <div className="text-5xl mb-3">📷</div>
+          <h2 className="font-semibold text-xl mb-2">Photos</h2>
+          <p className="text-gray-600 text-sm">
+            Store family photos, memories, and personal images.
+          </p>
+        </div>
+
+        <div className="bg-gray-100 rounded-2xl p-6 text-center shadow-sm">
+          <div className="text-5xl mb-3">🎥</div>
+          <h2 className="font-semibold text-xl mb-2">Videos</h2>
+          <p className="text-gray-600 text-sm">
+            Upload your personal and professional videos.
+          </p>
+        </div>
+
+        <div className="bg-gray-100 rounded-2xl p-6 text-center shadow-sm">
+          <div className="text-5xl mb-3">☁️</div>
+          <h2 className="font-semibold text-xl mb-2">Free Storage</h2>
+          <p className="text-gray-600 text-sm">
+            You can host this website for free using GitHub Pages or Netlify.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-12 bg-blue-50 border border-blue-200 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold mb-3">How to Use</h2>
+
+        <ol className="list-decimal list-inside space-y-2 text-gray-700">
+          <li>Create a free GitHub account.</li>
+          <li>Upload this React website code to GitHub.</li>
+          <li>Deploy it free using Vercel or Netlify.</li>
+          <li>Your website will get a public URL.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+); }
